@@ -1,0 +1,325 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25%,
+    75% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+    100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25%,
+    75% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}
+.header {
+  width: 70%;
+  min-height: 200px;
+  margin: 0 auto;
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header #auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 90px;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  padding: 5px;
+  font-size: 16px;
+  color: #68E3AD;
+  border-radius: 7px;
+}
+.header #auth #authImg {
+  height: 100%;
+  margin-left: 10px;
+  -webkit-box-shadow: 0 0 5px #68E3AD;
+          box-shadow: 0 0 5px #68E3AD;
+  border-radius: 5px;
+}
+.header #auth:hover {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  text-shadow: 0 0 6px #68E3AD;
+}
+.header #auth:hover #authImg {
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+  -webkit-box-shadow: 0 0 10px #68E3AD;
+          box-shadow: 0 0 10px #68E3AD;
+}
+.header-title {
+  width: 100%;
+  display: block;
+  font-size: 68px;
+  text-align: center;
+  color: #68E3AD;
+  text-shadow: 0px 0px 50px #FB00E5;
+}
+.header-content {
+  width: 75%;
+  text-align: center;
+  color: #E4A834;
+  font-size: 20px;
+  text-shadow: 0 0 2px #000;
+}
+.header-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.header-nav__li {
+  max-width: 250px;
+  width: auto;
+  min-height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+.header-nav__li a {
+  width: 100%;
+  height: 100%;
+  color: #FB00E5;
+  font-size: 32px;
+  text-shadow: 0px 0px 4px #000;
+}
+.header-nav__li a:hover {
+  color: #68E3AD;
+  text-shadow: 0px 0px 7px #A800B4;
+  -webkit-transition: ease 0.25s;
+  transition: ease 0.25s;
+}
+
+@font-face {
+  font-family: 'Fascinate';
+  src: url("../../src/fonts/Fascinate.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Retro Gaming';
+  src: url("../../src/fonts/RetroGaming.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: 'Fascinate';
+  background-color: #758c33;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
