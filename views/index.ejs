@@ -1,0 +1,61 @@
+<%- include ('partials/head')%>
+
+<body>
+    <div class="wrap">
+        <div id="error" class="content">
+            <header class="header">
+                <a id="auth" href="/auth">Login<img id="arrowImg" src="src/img/header/auth.png" alt="login" />
+                </a>
+                <h1 id="headerTitle" class="header-title">
+                    Welcome to the CVC
+                </h1>
+                <div class="header-content">
+                    Welcome to the СV constructor. On this page, you can
+                    either view my resume or create your own.
+                </div>
+                <div class="header-menu">
+                    <ul class="header-menu">
+                        <li class="header-menu__li">
+                            <a id="viewCV" href="/view">
+                                View author CV
+                            </a>
+                        </li>
+                        <li class="header-menu__li">
+                            <a id="create" href="/create">
+                                Create CV
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <main class="main">
+                <p id="introduce">Hi there! If you would like to see my resume, please, click "View author CV".</p>
+                <div class="products">
+                    <h3 class="products-title">
+                        Want to see my other work? Click on one of the ones
+                        below...
+                    </h3>
+                    <nav class="products-nav">
+                        <ul class="products-nav__ul">
+                            <li>
+                                <a href="#" target="_blank">"Cloud Protectly"</a>
+                            </li>
+                            <li>
+                                <a href="https://hot-dogs-managmnet.herokuapp.com/" target="_blank">"HotDogsManagment"
+                                </a>
+                            </li>
+                            <li><a href="#" target="_blank">"Cuda"</a></li>
+                            <li>
+                                <a href="#" target="_blank">"CVC" (this)</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </main>
+        </div>
+        <%- include ('partials/footer')%>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
