@@ -24,20 +24,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     animationLogin();
 
-    //view CV
-    // document
-    //     .getElementById("viewCV")
-    //     .addEventListener("click", function(event) {
-    //         event.preventDefault();
-    //     });
     //FIXME
     function addError() {
         let divError = document.createElement("div");
         divError.id = "divError";
         divError.innerHTML =
             "Sorry, this section is in development. Automatically close after 3s";
-        divError.style = `max-width: 600px;
-        width: 100%;
+        divError.style = `max-width: 720px;
         min-height: 45px;
         padding: 10px;
         font-size: 20px;
@@ -48,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         border-radius: 6px;
         top: 40%;
         left: 50%;
-        margin-left: -23%;
+        margin-left: -25%;
         text-align: center;
         d`;
         document.body.append(divError);
